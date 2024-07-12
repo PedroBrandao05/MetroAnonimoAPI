@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReportsService", "ReportsService", "{5A5E2233-C9B4-4C45-9670-B28B1F11ECEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportsService.Entities", "ReportsService.Entities\ReportsService.Entities.csproj", "{BBF8454F-1CF9-48C7-B5A8-188E33B44A6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportsService.Infrastructure", "ReportsService.Infrastructure\ReportsService.Infrastructure.csproj", "{8275E3F4-C301-4767-9F3C-008DFB3BB8AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBF8454F-1CF9-48C7-B5A8-188E33B44A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF8454F-1CF9-48C7-B5A8-188E33B44A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF8454F-1CF9-48C7-B5A8-188E33B44A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF8454F-1CF9-48C7-B5A8-188E33B44A6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8275E3F4-C301-4767-9F3C-008DFB3BB8AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8275E3F4-C301-4767-9F3C-008DFB3BB8AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8275E3F4-C301-4767-9F3C-008DFB3BB8AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8275E3F4-C301-4767-9F3C-008DFB3BB8AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BBF8454F-1CF9-48C7-B5A8-188E33B44A6F} = {5A5E2233-C9B4-4C45-9670-B28B1F11ECEE}
+		{8275E3F4-C301-4767-9F3C-008DFB3BB8AB} = {5A5E2233-C9B4-4C45-9670-B28B1F11ECEE}
+	EndGlobalSection
+EndGlobal
