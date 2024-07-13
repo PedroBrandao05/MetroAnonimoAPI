@@ -4,10 +4,11 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>Infrastructure</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Common.Entities\Common.Entities.csproj" />
+      <PackageReference Include="AWSSDK.S3" Version="3.7.310.6" />
     </ItemGroup>
 
 </Project>

@@ -7,8 +7,10 @@ public class Report : Model<Entities.Report>
   public string Title { get; set; } = String.Empty;
   
   public string Description { get; set; } = String.Empty;
+
+  public Location Location { get; set; } = new Location();
   
-  public required Location Location { get; set; } 
+  public List<string> Pictures { get; set; }
   
   public override Entities.Report ToEntity()
   {
@@ -16,7 +18,8 @@ public class Report : Model<Entities.Report>
       .Entitled(Title)
       .WithDescription(Description)
       .WithLocation(Location.ToEntity())
-      .ReportedBy(UserCode);
+      .ReportedBy(UserCode)
+      .WithPictures(Pictures);
   }
 
   public override Report FromEntity(Entities.Report entity)
@@ -29,7 +32,9 @@ public class Report : Model<Entities.Report>
       
       Description = entity.Description,
       
-      UserCode = entity.UserCode
+      UserCode = entity.UserCode,
+      
+      Pictures = entity.Pictures
     };
 
     return report;

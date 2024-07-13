@@ -1,4 +1,4 @@
-﻿using ReportsService.Entities.Core;
+﻿using Common.Core;
 
 namespace ReportsService.Entities;
 
@@ -11,6 +11,8 @@ public class Report : Entity
   public string Description { get; set; } = String.Empty;
 
   public Location Location { get; set; } = Location.Create();
+
+  public List<string> Pictures { get; set; } = new List<string>();
 
   public static Report Create(Guid id)
   {
@@ -45,6 +47,13 @@ public class Report : Entity
   public Report WithLocation(Location location)
   {
     Location = location;
+
+    return this;
+  }
+
+  public Report WithPictures(List<string> pictures)
+  {
+    Pictures = pictures;
 
     return this;
   }

@@ -1,4 +1,4 @@
-namespace ReportsService.Entities.Core;
+namespace Common.Core;
 
 public class Entity
 {
